@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fafafa;
+  min-height: screen;
+  overflow: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+@theme {
+  --blur-xs: 2px;
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  .paste-zone-active {
+    border-color: #6366f1;
+    background: rgba(99, 102, 241, 0.1);
+  }
+}
