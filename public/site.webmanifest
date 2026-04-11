@@ -1,0 +1,16 @@
+{
+  "name": "ClipDownload",
+  "short_name": "ClipDownload",
+  "description": "Download images from your clipboard as PNG files instantly. Secure, private, and 100% browser-based.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
