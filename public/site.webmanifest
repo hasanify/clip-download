@@ -1,7 +1,7 @@
 {
   "name": "ClipDownload",
   "short_name": "ClipDownload",
-  "description": "Download images from your clipboard as PNG files instantly. Secure, private, and 100% browser-based.",
+  "description": "Instantly convert clipboard images to PNG files without uploading. Fast, secure, and private.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0a",

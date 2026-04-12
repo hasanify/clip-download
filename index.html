@@ -1,88 +1,145 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/icon.png" />
-    <link rel="icon" type="image/ico" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/site.webmanifest" />
-    
-    <meta name="google-site-verification" content="14DgbqIjsLHaS01u1oaTmQhlK1jFytHRNX4odR2KcyQ" />
-
-    <title>ClipDownload | Instant Clipboard to PNG Converter</title>
-    <meta name="description" content="A simple, fast, and secure way to download images from your clipboard as PNG files. No uploads, everything stays in your browser. Perfect for developers and designers." />
-    <link rel="canonical" href="https://clip-download.vercel.app/" />
-    
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="ClipDownload | Instant Clipboard to PNG Converter" />
-    <meta name="theme-color" content="#0a0a0a" />
-    <meta name="keywords" content="clipboard to png, paste to png, download image from clipboard, clipboard converter, online clipboard tool, secure paste" />
-    <meta name="author" content="ClipDownload" />
-    <meta name="robots" content="index, follow" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://clip-download.vercel.app/" />
-    <meta property="og:title" content="ClipDownload | Instant Clipboard to PNG Converter" />
-    <meta property="og:description" content="Download images from your clipboard as PNG files instantly. Secure, private, and 100% browser-based." />
-    <meta property="og:image" content="https://clip-download.vercel.app/og-image.png" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://clip-download.vercel.app/" />
-    <meta property="twitter:title" content="ClipDownload | Instant Clipboard to PNG Converter" />
-    <meta property="twitter:description" content="Download images from your clipboard as PNG files instantly. Secure, private, and 100% browser-based." />
-    <meta property="twitter:image" content="https://clip-download.vercel.app/og-image.png" />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "ClipDownload",
-      "operatingSystem": "All",
-      "applicationCategory": "MultimediaApplication",
-      "description": "Download images from your clipboard as PNG files instantly. Secure, private, and 100% browser-based.",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "ClipDownload"
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do I download an image from my clipboard?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Simply copy an image to your clipboard and press Ctrl+V (or Cmd+V on Mac) while the site is open. The image will appear instantly, and you can download it as a PNG."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is ClipDownload safe to use?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. ClipDownload processes everything locally in your browser. Your images are never uploaded to any server, ensuring total privacy."
-          }
-        }
-      ]
-    }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="/icon.png" />
+        <link rel="icon" type="image/ico" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="google-site-verification" content="14DgbqIjsLHaS01u1oaTmQhlK1jFytHRNX4odR2KcyQ" />
+        <title>ClipDownload | Instant Clipboard to PNG Converter & Downloader</title>
+        <meta name="description" content="Instantly convert clipboard images to PNG files without uploading. A secure, private, and 100% browser-based tool for developers and designers to save clipboard data as lossless images." />
+        <link rel="canonical" href="https://clip-download.vercel.app/" />
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="ClipDownload | Instant Clipboard to PNG Converter & Downloader" />
+        <meta name="theme-color" content="#0a0a0a" />
+        <meta name="keywords" content="clipboard image converter, paste to png, download clipboard image, clipboard to png online, save clipboard as image, private screenshot converter, instant image capture, Ctrl+V to PNG, developer utility, designer tool" />
+        <meta name="author" content="ClipDownload" />
+        <meta name="robots" content="index, follow" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://clip-download.vercel.app/" />
+        <meta property="og:title" content="ClipDownload | Instant Clipboard to PNG Converter & Downloader" />
+        <meta property="og:description" content="Download images from your clipboard as PNG files instantly. 100% private, secure, and browser-based image conversion." />
+        <meta property="og:image" content="https://clip-download.vercel.app/og-image.png" />
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://clip-download.vercel.app/" />
+        <meta property="twitter:title" content="ClipDownload | Instant Clipboard to PNG Converter & Downloader" />
+        <meta property="twitter:description" content="Instantly save clipboard images as PNG files. No server uploads, total privacy, and high-fidelity downloads." />
+        <meta property="twitter:image" content="https://clip-download.vercel.app/og-image.png" />
+        <meta name="twitter:site" content="@ClipDownload" />
+        <meta name="twitter:creator" content="@ClipDownload" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <!-- JSON-LD Structured Data -->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "ClipDownload",
+              "operatingSystem": "All",
+              "applicationCategory": "MultimediaApplication",
+              "description": "Download images from your clipboard as PNG files instantly. Secure, private, and 100% browser-based.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              },
+              "author": {
+                "@type": "Organization",
+                "name": "ClipDownload"
+              }
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "ClipDownload",
+              "url": "https://clip-download.vercel.app/",
+              "applicationCategory": "MultimediaApplication",
+              "operatingSystem": "All",
+              "description": "Convert clipboard images to PNG files instantly. No uploads, 100% client-side.",
+              "browserRequirements": "Requires JavaScript",
+              "featureList": "Clipboard to PNG conversion, client-side processing, instant download",
+              "screenshot": "https://clip-download.vercel.app/og-image.png",
+              "author": {
+                "@type": "Organization",
+                "name": "ClipDownload"
+              }
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How do I download an image from my clipboard?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Simply copy an image to your clipboard and press Ctrl+V (or Cmd+V on Mac) while the site is open. The image will appear instantly, and you can download it as a PNG."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is ClipDownload safe to use?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. ClipDownload processes everything locally in your browser. Your images are never uploaded to any server, ensuring total privacy."
+                  }
+                }
+              ]
+            }
+        </script>
+    </head>
+    <body>
+        <div id="root">
+            <!-- SEO Fallback Content (Visible to crawlers, replaced by React) -->
+            <header
+            id="seo-header"
+            style="
+                text-align: center;
+                padding: 50px;
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip-path: inset(50%);
+                white-space: nowrap;
+                border-width: 0;
+                ">
+                ClipDownload - Instant Clipboard to PNG Converter</h1>
+                <p>The fastest and most secure way to download images from your clipboard as PNG files. No uploads required, everything stays in your browser.</p>
+            </header>
+            <main
+            id="seo-main"
+            style="
+                text-align: center;
+                padding: 50px;
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip-path: inset(50%);
+                white-space: nowrap;
+                border-width: 0;
+                ">
+                <section>
+                    <h2>Why use ClipDownload?</h2>
+                    <ul>
+                        <li><strong>Privacy First:</strong> Your images are processed locally. No server uploads.</li>
+                        <li><strong>Instant Conversion:</strong> Just Ctrl+V or Cmd+V and download.</li>
+                        <li><strong>High Fidelity:</strong> Lossless PNG format for developers and designers.</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
 </html>
