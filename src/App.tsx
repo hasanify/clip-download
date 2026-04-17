@@ -176,7 +176,7 @@ function App() {
           <div className="grid grid-cols-1 gap-8 pt-24 text-left md:grid-cols-2 lg:grid-cols-3">
             <section className="glass p-8 rounded-3xl space-y-4 border border-white/5 transition-transform hover:scale-[1.02] duration-500">
               <h2 className="text-sm font-black uppercase tracking-[0.2em] text-white/40">
-                How to Use ClipDownload
+                How do I save clipboard images?
               </h2>
               <div className="space-y-4 font-medium leading-relaxed text-white/60">
                 <p>
@@ -204,7 +204,7 @@ function App() {
 
             <section className="glass p-8 rounded-3xl space-y-4 border border-white/5 transition-transform hover:scale-[1.02] duration-500">
               <h2 className="text-sm font-black uppercase tracking-[0.2em] text-white/40">
-                Why ClipDownload?
+                Benefits of Local Image Conversion
               </h2>
               <div className="space-y-4 font-medium leading-relaxed text-white/60">
                 <p>

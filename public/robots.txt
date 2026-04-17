@@ -1,4 +1,24 @@
 User-agent: *
 Allow: /
 
+# Allow search-focused AI crawlers to cite and index for AI Overviews
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Block AI training crawlers from using content for training only (if desired, currently allowing for maximum visibility)
+# User-agent: CCBot
+# Disallow: /
+
 Sitemap: https://clip-download.vercel.app/sitemap.xml
